@@ -327,7 +327,7 @@ instructions as interrupt/exception handler.</p>
 <li>processor locates IDT by the means of IDTR</li>
 </ul>
 <p>Below we can find Linux IRQ vector layout. The first 32 entries are reserved
-for exceptions, vector 128 is used for sycall interface and the rest are
+for exceptions, vector 128 is used for syscall interface and the rest are
 used mostly for hardware interrupts handlers.</p>
 <img alt="../_images/ditaa-dc1532523c503b0c569468d4ed1d7aeb11ed0ed0.png" class="admonition-linux-irq-vector-layout" src="../_images/ditaa-dc1532523c503b0c569468d4ed1d7aeb11ed0ed0.png" />
 <p>On x86 an IDT entry has 8 bytes and it is named gate. There can be 3 types of gates:</p>
